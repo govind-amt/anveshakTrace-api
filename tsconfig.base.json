@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@anveshak/algorand": ["libs/algorand/src/index.ts"],
+      "@anveshak/algorand/algorand": ["libs/algorand/algorand/src/index.ts"],
+      "@anveshak/auth": ["libs/auth/src/index.ts"],
+      "@anveshak/configuration": ["libs/configuration/src/index.ts"],
+      "@anveshak/data-transfer-objects": [
+        "libs/data-transfer-objects/src/index.ts"
+      ],
+      "@anveshak/schema": ["libs/schema/src/index.ts"],
+      "@anveshak/users": ["libs/users/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
